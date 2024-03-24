@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:id="@+id/nameId"
+            android:text="malaysia"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/malaysia"
+                android:id="@+id/imageId"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:clipToOutline="true"
+                />
+
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/priceId"
+                android:text="$"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/discountId"
+                android:text=" Dsicount"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="%off"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/brand"
+            android:text="Brand: "
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/descriptionId"
+            android:text="Description: "
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rate_24"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ratingTextId"
+                android:textColor="@color/white"
+                android:text="rate"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="|"
+                />
+
+            <TextView
+                android:id="@+id/stockId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="Stock: "
+                />
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:id="@+id/cartButton"
+            android:text="Add to cart"
+            android:textColor="@color/white"
+            android:background="#ffeedd"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
